@@ -22,7 +22,7 @@
 // Psudocode is the bridge between our minds and the code. 
 
 // 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
-
+// 80% gatehring ideas, make the logic to work, testing, bug fix, update .. etc
 
 
 // ## Strings
@@ -30,47 +30,62 @@
 // **For all other questions that involve writing code, you can solve them via the app.js folder under it's respectice section** 
 
 // - Create a variable called firstVariable
+let firstVariable;
+
 // - Assign it the value of the string "Hello World"
+firstVariable = "Hello World";
+
 // - Change the value of this variable to some number
+firstVariable = 1;
+
 // - Store the value of firstVariablein a new variable called secondVariable
+let secondVariable = firstVariable;
+
 // - Change the value of secondVariableto any string.
+secondVariable = "Hi";
 
 // What is the value of firstVariable?
+1
 
 // - Create a variable called yourName and set it equal to your name as a string. Then, write an expression that takes the string `"Hello, my name is "` and the variable yourName. 
-
+let yourName = "EJ";
+console.log(`Hello, my name is ${yourName}`);
 // ex output: Hello, my name is Jean Valjean
 
 // ## Booleans
 
-// Using the provided variable definitions, replace the blanks so that all log statements print truein the console. Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print true to the console:
+// Using the provided variable definitions, replace the blanks so that all log statements print true in the console. Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print true to the console:
 
-//   `const a = 4;`
-//   `const b = 53;`
-//   `const c = 57;`
-//   `const d = 16;`
-//   `const e = 'Kevin';`
+  const a = 4;
+  const b = 53;
+  const c = 57;
+  const d = 16;
+  const e = 'Kevin';
  
 
-//   `console.log(a __ b);`
-//   `console.log(c __ d);`
-//   `console.log('Name' __ 'Name');`
-  
-//   ### // FOR THE NEXT TWO, USE ONLY && OR ||
+  console.log(a < b);
+  console.log(c > d);
+  console.log('Name' === 'Name');
 
-//   `console.log(true __ false);`
-//   `console.log(false __ false __ false __ false __ false __ true);`
-//   `console.log(false __ false)`
-//   `console.log(e ___ 'Kevin');`
-//   `console.log(a __ b ___ c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)`
-//   `console.log(a __ a ___ d); // note: the answer is a simple arithmetic equation, not something "weird"`
-//   `console.log(48 __ '48');`
+  
+//   ### // FOR THE NEXT TWO, USE ONLY && OR || ??
+
+  console.log(true || false);
+  console.log(false || false || false || false || false || true);
+  console.log(false == false)
+  console.log(e == 'Kevin');
+  console.log(a != b != c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
+  console.log(a == a != d); // note: the answer is a simple arithmetic equation, not something "weird"
+  console.log(48 !== '48');
 
 // ### The Farm 
 
 // 1. Declare a variable animal. Set it to be either "cow" or something else
+let animal = "cow";
 // 2. Write code that will print out "mooooo" if the it is equal to cow
+if (animal === "cow") console.log("mooooo");
 // 3. Change your code so that if the variable animalis anything other than a cow, it will print `"Hey! You're not a cow."`
+(animal === "cow") ? console.log("mooooo"): console.log("Hey! You're not a cow.");
 // 4. Commit
 
 // ### Driver's Ed
